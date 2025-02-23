@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Unlocking Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Phone Unlocking Services</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>We offer unlocking services for a variety of phone brands including Samsung, Motorola, and more!</p>
+    </section>
+
+    <section id="pricing">
+        <h2>Check Unlocking Price</h2>
+        <form id="unlockForm">
+            <label for="brand">Select Phone Brand:</label>
+            <select id="brand" name="brand" required>
+                <option value="">Select...</option>
+                <option value="samsung">Samsung</option>
+                <option value="motorola">Motorola</option>
+                <option value="iphone">iPhone</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="model">Enter Phone Model:</label>
+            <input type="text" id="model" name="model" required>
+
+            <button type="submit">Get Price</button>
+        </form>
+        <div id="priceResult"></div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <div id="contactResponse"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Phone Unlocking Services</p>
+    </footer>
+
+    <!-- Tawk.to Live Chat Script -->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function() {
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/YOUR_TAWK_TO_ID/default';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!-- End Tawk.to Live Chat Script -->
+</body>
+</html>
